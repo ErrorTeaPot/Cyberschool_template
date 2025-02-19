@@ -73,9 +73,9 @@
   set align(start + top)
   show outline: set text(cyber_blue)
 
+  set outline.entry(fill:none)
   outline(
     title: outline_title,
-    fill: none,
     indent: 1em,
   )
 
@@ -86,9 +86,6 @@
   show heading.where(level: 1) : set text(purple)
   show heading.where(level: 2) : set text(darker_purple)
 show heading.where(level: 3) : set text(darker_darker_purple)
-
-// fucks up codly
-  // show raw.where(block: true) : set block(fill: gray, inset: 5pt, radius: 3pt)
 
   doc
 }
