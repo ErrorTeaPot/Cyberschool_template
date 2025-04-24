@@ -1,6 +1,6 @@
 [package]
 name = "cyberschool-errorteaplate"
-version = "0.1.3"
+version = "0.1.4"
 entrypoint = "src/lib.typ"
 authors = ["ErrorTeaPot"]
 license = "MIT"
@@ -10,7 +10,7 @@ repository = "https://github.com/ErrorTeaPot/Cyberschool_template"
 keywords = ["Cyberschool", "Report"]
 categories = ["report"]
 #disciplines = []
-compiler = "0.12.0"
+compiler = "0.13.1"
 exclude = [
   ".github",
   "docs",
