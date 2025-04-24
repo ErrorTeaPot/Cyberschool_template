@@ -1,5 +1,5 @@
-#import "@preview/codly:1.2.0": *
-#import "@preview/codly-languages:0.1.1": *
+#import "@preview/codly:1.3.0": *
+#import "@preview/codly-languages:0.1.8": *
 #show: codly-init.with()
 
 #let conf(
@@ -20,6 +20,7 @@
 
   set align(center)
   set page(number-align: center, numbering: "1")
+  set par(justify: true)
 
   // Display logos
   let nb_logos = logos.len()
