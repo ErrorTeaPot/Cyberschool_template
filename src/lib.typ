@@ -25,6 +25,7 @@
   // Display logos
   let nb_logos = logos.len()
   grid(
+    align: center + horizon,
     columns: (1fr, )* nb_logos,
     ..logos.map(logo => logo(width: 100pt))
   )
