@@ -1,15 +1,17 @@
 # The `cyberschool-errorteaplate` Package
 
-This package is a template based on the colors of the Cyberschool of Rennes, France. It is based on Latex templates I wanted to use in Typst. 
+This package is a template based on the colors of the Cyberschool of Rennes,
+France. It is based on Latex templates I wanted to use in Typst.
 
 Feel free to make suggestions on the [dedicated repo](https://github.com/ErrorTeaPot/Cyberschool_template).
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on the typst web app.
+These instructions will get you a copy of the project up and running on the typst
+web app.
 
 ```typ
-#import "@preview/cyberschool-errorteaplate:0.1.4": *
+#import "@preview/cyberschool-errorteaplate:0.1.5": *
 
 #show: conf.with(
   title: "Title",
@@ -32,9 +34,11 @@ These instructions will get you a copy of the project up and running on the typs
 
 ### Installation
 
-To help with development, fork [this repository](https://github.com/ErrorTeaPot/Cyberschool_template), make your changes and then create a pull request. 
-For additional information about the guidelines and stuff, refer to the README of [this repository](https://github.com/typst/packages).
+To help with development, fork [this repository](https://github.com/ErrorTeaPot/Cyberschool_template), make your changes and then create a pull request.
+For additional information about the guidelines and stuff, refer to the README of
+[this repository](https://github.com/typst/packages).
 
 ## Additional Documentation and Acknowledgments
 
-Thanks to [lucasrqt](https://github.com/lucasrqt) for the original Latex template on which this one is based on.
+Thanks to [lucasrqt](https://github.com/lucasrqt) for the original Latex template
+on which this one is based on.
