@@ -1,6 +1,8 @@
 #import "@preview/codly:1.3.0": *
-#import "@preview/codly-languages:0.1.8": *
 #show: codly-init.with()
+
+#import "@preview/codly-languages:0.1.8": *
+#codly(languages: codly-languages)
 
 #let conf(
   title: none,
