@@ -72,11 +72,13 @@
 
   show outline.entry : it => {
     if (it.level == 1){
-    v(20pt, weak: true)
-    strong(it)
-  } else {
-    it
-  }
+      v(20pt, weak: true)
+      strong(it)
+    } else {
+      if (it.level <= 3){
+        it
+      }
+    }
   }
   set align(start + top)
   show outline: set text(cyber_blue)
