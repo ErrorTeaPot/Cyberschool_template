@@ -91,9 +91,18 @@
 
   set align(start + top)
   set heading(numbering: "1.")
-  show heading.where(level: 1) : set text(purple)
-  show heading.where(level: 2) : set text(darker_purple)
-  show heading.where(level: 3) : set text(darker_darker_purple)
+  show heading: it => {
+    if (it.level == 1){
+      set text(purple)
+      it
+    } else if (it.level == 2){
+      set text(darker_purple)
+      it
+    } else {
+      set text(darker_darker_purple)
+      it
+    }
+  }
 
   doc
 }
