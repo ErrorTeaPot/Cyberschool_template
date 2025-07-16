@@ -21,7 +21,7 @@
   let darker_darker_purple = rgb("#744DC1")
 
   set align(center)
-  set page(number-align: center, numbering: "1")
+  
   set par(justify: true)
 
   // Display logos
@@ -64,6 +64,7 @@
   pagebreak(weak: true, to: "odd")
   //set align(start)
 
+  set page(number-align: center, numbering: "1")
   show outline: it => {
     show heading: set align(center)
     show heading: set text(purple)
