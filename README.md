@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on the typs
 web app.
 
 ```typ
-#import "@preview/cyberschool-errorteaplate:0.1.7": *
+#import "@preview/cyberschool-errorteaplate:0.1.8": *
 
 #show: conf.with(
   title: "Title",
@@ -29,6 +29,7 @@ web app.
   ),
   abstract: "abstract text",
   outline-title: "Contents",
+  outline-level: 3,
 )
 ```
 

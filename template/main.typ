@@ -1,4 +1,4 @@
-#import "@preview/cyberschool-errorteaplate:0.1.7": *
+#import "@preview/cyberschool-errorteaplate:0.1.8": *
 #show: conf.with(
   title: "Title",
   pre-title: "Pre-title",
@@ -15,6 +15,7 @@
   ),
   abstract: "abstract text",
   outline-title: "Contents",
+  outline-level: 3,
 )
 
 = Hello, world !
