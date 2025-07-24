@@ -12,6 +12,7 @@
   logos: (),
   abstract: [],
   outline-title: none,
+  outline-level: 3,
   doc,
 ) = {
 
@@ -76,7 +77,7 @@
       v(20pt, weak: true)
       strong(it)
     } else {
-      if (it.level <= 3){
+      if (it.level <= outline-level){
         it
       }
     }
