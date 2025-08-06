@@ -108,5 +108,12 @@
     }
   }
 
+  show ref: it => {
+    let el = it.element
+    if el != none and el.func() == heading {
+      link(el.location(), lower(it))
+    }
+  }
+
   doc
 }
