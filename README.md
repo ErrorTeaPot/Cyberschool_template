@@ -28,6 +28,7 @@ web app.
     image.with("<image path>"),
   ),
   abstract: "abstract text",
+  show-outline: true,
   outline-title: "Contents",
   outline-level: 3,
 )
