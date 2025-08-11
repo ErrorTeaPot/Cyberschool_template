@@ -111,13 +111,6 @@ set page(number-align: center, numbering: "1")
       it
     }
   }
-
-  show ref: it => {
-    let el = it.element
-    if el != none {
-      link(el.location(), lower(it))
-    }
-  }
-
+  
   doc
 }
