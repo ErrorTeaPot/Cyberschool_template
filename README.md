@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on the typs
 web app.
 
 ```typ
-#import "@preview/cyberschool-errorteaplate:0.1.11": *
+#import "@preview/cyberschool-errorteaplate:0.1.12": *
 
 #show: conf.with(
   title: "Title",
@@ -23,11 +23,20 @@ web app.
       email: "email",
     ),
   ),
+  supervisors: (
+    (
+      name: "name",
+      affiliation: "affiliation",
+      email: "email",
+    ),
+  ),
   logos: (
     image.with("<image path>"),
     image.with("<image path>"),
   ),
+  abstract-title: "New abstract title",
   abstract: "abstract text",
+  date: "New date",
   show-outline: true,
   outline-title: "Contents",
   outline-level: 3,
@@ -36,7 +45,8 @@ web app.
 
 ### Installation
 
-To help with development, fork [this repository](https://github.com/ErrorTeaPot/Cyberschool_template), make your changes and then create a pull request.
+To help with development, fork [this repository](https://github.com/ErrorTeaPot/Cyberschool_template),
+make your changes and then create a pull request.
 For additional information about the guidelines and stuff, refer to the README of
 [this repository](https://github.com/typst/packages).
 

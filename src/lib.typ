@@ -9,8 +9,11 @@
   pre-title: none,
   subtitle: none,
   authors: (),
+  supervisors: (),
   logos: (),
+  abstract-title: "Abstract",
   abstract: [],
+  date: datetime.today().display("[year]"),
   show-outline: true,
   outline-title: none,
   outline-level: 3,
@@ -52,16 +55,32 @@
       #link("mailto:" + author.email)
     ]),
   ))
-} 
+  } 
+
+// Display supervisors
+  for chunk in supervisors.chunks(3) {
+  block(spacing: 24pt, grid(
+    columns: (1fr,) * chunk.len(),
+    ..chunk.map(author => [
+      #author.name \
+      #author.affiliation \
+      #link("mailto:" + author.email)
+    ]),
+  ))
+  }
+
+  // Add space between names and abstract
+  linebreak()
+  linebreak()
 
   // Display abstract
   par(justify: true)[
-    *Abstract* \
+    *#abstract-title* \
     #abstract
   ]
   set align(center + bottom)
   // Display current year
-  datetime.today().display("[year]")
+  date
 
   // Manage outline
   if show-outline {
@@ -111,6 +130,5 @@ set page(number-align: center, numbering: "1")
       it
     }
   }
-  
   doc
 }
